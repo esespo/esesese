@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciągi liczbowe</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <header class="banery">
+        <section class="baner1">
+            <h2>Poznaj Ciągi Liczbowe</h2>
+        </section>
+        <section class="baner2">
+            <a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
+        </section>
+        <section class="baner3">
+            <a href="fib.html"><h5>Ciąg Fibonacciego</h5></a>
+        </section>
+        <section class="baner4">
+            <img src="obraz1.png" alt="Fibonacci">
+        </section>
+    </header>
+    <section class="lewy">
+        <ol>
+            <li>ciągi arytmetyczne</li>
+            <li>ciągi geometryczne</li>
+            <li>ciąg Fibonacciego</li>
+        </ol>
+    </section>
+
+    <section class="prawy">
+        <h2>Generowanie ciągu arytmetycznego</h2>
+        Pierwszy wyraz A1: <input type="number" id="a1" value="1"><br><br>
+        Różnica ciągu d: <input type="number" id="d" value="1"><br><br>
+        Liczba wyrazów N: <input type="number" id="n" value="1"><br><br>
+        <input type="button" value="Generuj Ciąg" onclick="generujCiag()">
+        <div id="wynik"></div>
+    </section>
+
+    <footer>
+        <p>Autor: 0000000000</p>
+    </footer>
+    <script>
+        function generujCiag() {
+            const a1 = parseFloat(document.getElementById('a1').value);
+            const d = parseFloat(document.getElementById('d').value);
+            const n = parseInt(document.getElementById('n').value);
+            let ciag = [];
+            for (let i = 0; i < n; i++) {
+                ciag.push(a1 + i * d);
+            }
+            document.getElementById('wynik').innerText = 'Ciąg arytmetyczny zawiera wyrazy: ' + ciag.join(', ');
+        }
+        </script>
+</body>
+</html>

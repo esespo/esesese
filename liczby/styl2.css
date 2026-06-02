@@ -1,0 +1,59 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2F2F2F;
+    box-sizing: border-box;
+}
+
+.banery {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.baner1 {
+    background-color: #DCDCDC;
+    width: 55%;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.baner2,.baner3,.baner4 {
+    background-color: #DCDCDC;
+    width: 15%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lewy {
+    background-color: #808080;
+    width: 30%;
+    height: 450px;
+    float: left;
+}
+
+.prawy {
+    background-color: #808080;
+    width: 70%;
+    height: 450px;
+    float: right;
+}
+
+footer {
+    background-color: #DCDCDC;
+    text-align: center;
+    clear: both;
+}
+
+h5 {
+    color: #808080;
+    border: 1px solid #808080;
+    margin: 7px;
+    padding: 10px;
+    font-size: 80%;
+}
