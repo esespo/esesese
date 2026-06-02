@@ -1,0 +1,101 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: stretch;
+}
+
+#banerlewy,#banerprawy {
+    background-color: #003d33;
+    color: white;
+    text-align: center;
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banerlewy {
+    width: 70%;
+}
+
+#banerprawy {
+    width: 30%;
+}
+
+.lewy {
+    background-color: #26a69a;
+    height: 550px;
+    width: 30%;
+    float: left;
+}
+
+.prawy {
+    background-color: #26a69a;
+    height: 550px;
+    width: 70%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wizytowka {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 80%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.wizytowka td {
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.wizytowka img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.liczba-przyjaciol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.liczba-przyjaciol img {
+    margin: 0;
+}
+
+.liczba-przyjaciol p {
+    margin: 0;
+}
+
+.przycisk-wiecej {
+    background-color: #003d33;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.przycisk-wiecej:hover {
+    background-color: #004c40;
+}
+
+footer {
+    background-color: #003d33;
+    color: white;
+}

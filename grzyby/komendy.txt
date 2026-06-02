@@ -1,0 +1,15 @@
+kw1: SELECT nazwa, potoczna
+FROM grzyby
+WHERE jadalny = 1;
+
+kw2: SELECT g.nazwa, g.potoczna, r.potoczna AS rodzina_potoczna
+FROM grzyby g
+JOIN rodzina r ON g.rodzina_id = r.id
+JOIN potrawy p ON g.potrawa_id = p.id
+WHERE p.nazwa = 'sos';
+
+kw3: SELECT nazwa_pliku, potoczna
+FROM grzyby;
+
+kw4: ALTER TABLE rodzina
+ADD opis TEXT;
