@@ -1,0 +1,3 @@
+W formularzu zamiast pola edycyjnego 
+wstaw pole wyboru z listą rozwijaną 
+zawierającą wykaz gatunków.
